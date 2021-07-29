@@ -17,11 +17,3 @@ foreach ($alunoList as $aluno) {
     echo "ID: {$aluno->getId()}\nNome: {$aluno->getNome()}\n\n";
 }
 
-$nico = $alunoRepository->find(4);
-echo $nico->getNome() . "\n\n";
-
-$sergioLopes = $alunoRepository->findBy([
-    'nome' => 'Sergio Lopes'
-]);
-
-var_dump($sergioLopes);
